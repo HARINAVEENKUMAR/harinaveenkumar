@@ -1,0 +1,48 @@
+.link-with-line {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .link-with-line::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: navy;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .link-with-line:hover::before {
+    width: 100%;
+  }
+  
+  .board {
+    background-color: #FFFFFF; /* light beige background */
+    border: 2px solid #0000FF; /* black border */
+    border-radius: 10px; /* rounded corners */
+    padding: 20px; /* add some padding */
+    box-shadow: 5px 5px 15px #888; /* add a shadow for depth */
+    margin: 20px auto; /* center the div */
+    max-width: 600px; /* limit the width of the div */
+  }
+  
+  .board h2 {
+    margin-top: 0; /* remove default top margin */
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  
+  
